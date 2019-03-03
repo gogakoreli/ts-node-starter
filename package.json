@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "prod": "npm run build & node ./dist/app.js",
-    "dev": "ts-node -r dotenv/config ./lib/app.ts",
+    "dev": "ts-node -r dotenv/config ./src/app.ts",
     "live": "nodemon --ext ts --exec npm run dev"
   },
   "author": "",
