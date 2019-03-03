@@ -1,0 +1,22 @@
+{
+  "name": "ts-node-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "build": "tsc",
+    "prod": "npm run build & node ./dist/app.js",
+    "dev": "ts-node -r dotenv/config ./lib/app.ts",
+    "live": "nodemon --ext ts --exec npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "11.10.4",
+    "nodemon": "1.18.10",
+    "ts-node": "8.0.2",
+    "typescript": "3.3.3",
+    "dotenv": "6.2.0"
+  }
+}
